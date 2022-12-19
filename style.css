@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 155px;
+    height: 115px;
+    position: relative;
+    background-color: blue;
+}
+
+.rowstar {
+    height: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    display: block;
+    color: white;
+    align-items: center;
+}
+
+.rowstar:nth-child(odd){
+    justify-content: space-around;
+}
+
+.rowstar:nth-child(even){
+    justify-content: space-evenly;
+}
